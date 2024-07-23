@@ -14,8 +14,7 @@ services:
     networks:
       - iris
     depends_on:
-      oncall-mysql:
-        condition: service_healthy
+      - oncall-mysql
 
   oncall-mysql:
     hostname: oncall-mysql
